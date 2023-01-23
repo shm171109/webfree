@@ -1,0 +1,57 @@
+@use "../global" as *;
+
+.table{
+  background-color: $white;
+  border-collapse: collapse;
+  border: 1px solid #707070;
+}
+
+.table td, table th{
+  border-right: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  text-align: center;
+  height: rem(70);
+}
+
+.table th:nth-child(1){
+  width: rem(140);
+  @include mq(md) {
+    width: rem(250);
+  }
+}
+
+.table th:nth-child(2),table th:nth-child(3){
+  width: rem(304);
+  @include mq(md) {
+    width: rem(400);
+  }
+}
+
+.table th{
+  font-size: rem(18);
+  padding: rem(15);
+  @include mq(md) {
+    font-size: rem(25);
+  }
+  
+}
+
+.table td{
+  font-size: rem(18);
+  padding: rem(18);
+  @include mq(md) {
+    font-size: rem(25);
+  }
+}
+
+.table td li{
+  font-size: rem(14);
+  line-height: calc(29 / 14);
+  font-weight: $bold;
+  text-align: left;
+  display: flex;
+}
+
+.table td li::before {
+  flex-shrink: 0;
+}

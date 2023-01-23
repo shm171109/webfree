@@ -1,0 +1,72 @@
+@use "../global" as *;
+
+.form__item{
+  display: flex;
+  align-items: center;
+}
+
+.form__item:nth-child(n+2){
+  margin-top: rem(40);
+}
+
+.form__item-flexstart{
+  align-items: flex-start;
+}
+
+.form__item-flexstart .form__label-area {
+  margin-top: rem(6);
+
+}
+
+.form__label-area{
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.form__label{
+  font-size: rem(20);
+  line-height: calc(24 / 20);
+  font-family: $base-font-family;
+  font-weight: $medium;
+  color: #502323;
+}
+
+.form__input-area{
+  width: rem(200);
+  margin-top: rem(10);
+  @include mq(md) {
+    width: rem(500);
+    margin-top: 0;
+  }
+}
+
+
+.form__input-area input,
+.form__input-area textarea {
+  background-color: $white;
+  border: 1px solid #CCCCCC;
+  border-radius: 0;
+  width: 100%;
+  padding: rem(10);
+  appearance: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.form__item--contact{
+  align-items: start;
+}
+
+.form__btn{
+  margin-top: rem(80);
+  text-align: center;
+}
+
+.form__btn button{
+  transition: 0.3s;
+}
+
+.form__btn button:hover{
+  opacity: 0.7;
+}

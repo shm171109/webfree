@@ -1,0 +1,37 @@
+@use "../global" as *;
+
+.osinagaki{
+  background-color: #ffffff;
+}
+
+.osinagaki-items{
+  width: rem(665);
+  display: flex;
+  @include mq(md) {
+    margin-top: rem(40);
+    margin-right: 0;
+    margin-left: 0;
+    width: initial;
+  }
+}
+
+.osinagaki__item-wrapper{
+  margin: 0 calc(50% - 50vw);
+  overflow-x: scroll;
+}
+
+.osinagaki__item-img{
+  width: rem(160);
+  margin-top: rem(20);
+  margin-right: rem(5);
+  @include mq(md) {
+  width: rem(240);
+  max-width: 100%;
+  margin-right: rem(40);
+  height: initial;
+  }
+}
+
+.osinagaki__btn{
+  text-align: center;
+}

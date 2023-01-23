@@ -1,0 +1,123 @@
+@charset "UTF-8";
+body {
+  font-weight: 400;
+}
+
+body {
+  color: #000;
+}
+
+.osirase {
+  background-color: #ffffff;
+}
+
+/*アコーディオン全体*/
+.accordion-area {
+  list-style: none;
+  width: 96%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-right: 0;
+  padding-left: 0;
+}
+@media screen and (min-width: 768px) {
+  .accordion-area {
+    max-width: 1280px;
+  }
+}
+
+.accordion-area li {
+  margin: 16px 0;
+}
+@media screen and (min-width: 768px) {
+  .accordion-area li {
+    margin: 80px 0;
+  }
+}
+
+.accordion-area section {
+  border: 1px solid #91855F;
+}
+
+/*アコーディオンタイトル*/
+.accordion__wrapper {
+  position: relative; /*+マークの位置基準とするためrelative指定*/
+  cursor: pointer;
+  font-weight: 400;
+  padding: 3% 3% 3% 50px;
+  transition: all 0.5s ease;
+  color: #ffffff;
+  background-color: #91855F;
+}
+@media screen and (min-width: 768px) {
+  .accordion__wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .osirase-item__date {
+    margin-right: 1.875rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: "Noto Serif JP", serif;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .accordion-title title {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: "Noto Serif JP", serif;
+  }
+}
+
+.accordion__wrapper::before {
+  content: "";
+  position: absolute;
+  width: 1.25rem;
+  height: 1.0625rem;
+  background: url(../img/common/sankaku.png) no-repeat center center/contain;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .accordion__wrapper::before {
+    background: url(../img/common/sankaku-pc.png) no-repeat center center/cover;
+    height: 1.4375rem;
+    margin-right: 0.8125rem;
+  }
+}
+
+/*　closeというクラスがついたら形状変化　*/
+.accordion__wrapper.close::before {
+  transform: rotate(90deg) translateY(0) translateX(-50%);
+}
+
+/*アコーディオンで現れるエリア*/
+.box {
+  display: none; /*はじめは非表示*/
+  background: #ffffff;
+  background-color: #ffffff;
+  padding: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .box {
+    font-size: 1rem;
+    line-height: 2.25;
+    font-family: "Noto Serif JP", serif;
+    padding-top: 0.8125rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1.0625rem;
+    padding-left: 2.25rem;
+  }
+}
+
+/*========= レイアウトのためのCSS ===============*/
+h2 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 1rem;
+}/*# sourceMappingURL=osirase.css.map */

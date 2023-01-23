@@ -1,0 +1,11 @@
+@use "../global" as *;
+
+.mv {
+  background: url(../img/top/mv-sp-1.jpg) no-repeat center center/ cover;
+  width: 100%;
+  height: 100vh;
+  @include mq(md) {
+    height: rem(768);
+    background: url(../img/top/mv-pc.jpg) no-repeat center center/ cover;
+  }
+}

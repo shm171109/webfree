@@ -1,0 +1,24 @@
+@use "../global" as *;
+
+.hitosara__btn{
+  text-align: center;
+}
+
+.btn{
+  font-size: rem(14);
+  line-height: calc(17 / 14);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  background: url(../img/common/btn-back-sp.png) no-repeat center center/ cover;
+  width: rem(103);
+  height: rem(40);
+  color: #E3E3E3;
+  margin-top: rem(20);
+  @include mq(md) {
+  background: url(../img/common/btn-back.png) no-repeat center center/ cover;
+    margin-top: rem(40);
+    font-size: rem(16);
+    line-height: calc(19 / 16);
+    width: rem(121);
+  }
+}

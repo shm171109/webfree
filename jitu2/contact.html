@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <!-- meta情報 -->
+  <title>タイトル</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="shortcut icon" href="#" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./js/script.js"></script>
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="">
+          <img class="menu__logo-white" src="img/common/logo-mv.png" alt="kon-logo">
+        </a>
+      </h1>
+      <button class="header__hamburger hamburger js-hamburger">
+        <div class="hamburger__wrapper menu__hamburger-wrapper">
+          <div class="hamburger__bar-area menu__hamburger__bar-area">
+            <span class="hamburger__bar menu__hamburger__bar"></span>
+            <span class="hamburger__bar menu__hamburger__bar"></span>
+            <span class="hamburger__bar menu__hamburger__bar"></span>
+          </div>
+        </div>
+      </button>
+      
+      <nav class="header__nav header-nav js-drawer">
+        <ul class="header-nav__items">
+          <li class="header-nav__item menu-nav__item">
+            <a href="">
+              top
+            </a>
+          </li>
+          <li class="header-nav__item menu-nav__item">
+            <a href="">
+              メニュー
+            </a>
+          </li>
+          <li class="header-nav__item menu-nav__item">
+            <a href="">
+              お問い合わせ
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu__mv">
+      <div class="menu__mv__inner inner">
+        <h2 class="menu__title">CONTACT</h2>
+        <div class="menu__img"><img src="img/common/img_menu_mv.png" alt=""></div>
+      </div>
+      <div class="menu-slideshow">
+        <ul class="menu__slide-img">
+          <li class="slide-content">
+            <img src="img/top/img_1.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_2.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_3.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_4.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_5.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_6.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_7.jpg" alt="">
+          </li>
+        </ul>
+        <ul class="menu__slide-img">
+          <li class="slide-content">
+            <img src="img/top/img_1.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_2.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_3.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_4.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_5.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_6.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_7.jpg" alt="">
+          </li>
+        </ul>
+        <ul class="menu__slide-img">
+          <li class="slide-content">
+            <img src="img/top/img_1.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_2.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_3.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_4.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_5.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_6.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_7.jpg" alt="">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="menu">
+      <div class="menu__inner inner">
+        <h2 class="menu-title"><span>C</span>ontact</h2>
+          <div class="contact__inner">
+            <form action class="contact__form">
+              <div class="form__items">
+                <div class="form__item">
+                  <div class="form__label-area">
+                    <label for="name" class="form__label">お名前<span>※</span></label>
+                  </div>
+                  <div class="form__input-area">
+                    <input type="text" name="name" id="name">
+                  </div>
+                </div>
+                <div class="form__item">
+                  <div class="form__label-area">
+                    <label for="tel" class="form__label">お電話番号<span>※</span></label>
+                  </div>
+                  <div class="form__input-area">
+                    <input type="tel" name="tel" id="tel">
+                  </div>
+                </div>
+                <div class="form__item">
+                  <div class="form__label-area">
+                    <label for="mail" class="form__label">メールアドレス</label>
+                  </div>
+                  <div class="form__input-area">
+                    <input type="email" name="mail" id="mail">
+                  </div>
+                </div>
+                <div class="form__item form__item--contact">
+                  <div class="form__label-area">
+                    <label for="message" class="form__label">お問い合わせ内容</label>
+                  </div>
+                  <div class="form__input-area">
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                  </div>
+                </div>
+              </div>
+              <p class="contact__text u-desktop">※前日のご予約の方はお電話でお願いします。<br>
+                ※ご予約希望の方は日にちと人数のご記入をお願いします。
+              </p>
+              <div class="form__btn">
+                <button class="btn" type="submit"><span>送信</span></button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <img src="img/common/logo-mv.png" alt="">
+        </div>
+        <div class="footer__wrapper">
+          <dl class="footer__dl">
+            <div class="footer__row">
+              <dt class="footer__dt">店名</dt>
+              <dd class="footer__dd">Kon</dd>
+            </div>
+            <div class="footer__row">
+              <dt class="footer__dt">住所</dt>
+              <dd class="footer__dd">熊本県熊本市城下町1-1</dd>
+            </div>
+            <div class="footer__row">
+              <dt class="footer__dt">電話番号</dt>
+              <dd class="footer__dd">096-111-1111</dd>
+            </div>
+            <div class="footer__row">
+              <dt class="footer__dt">アクセス</dt>
+              <dd class="footer__dd">熊本駅より市電で城下町へ城下町降車後徒歩3分</dd>
+            </div>
+            <div class="footer__row">
+              <dt class="footer__dt">営業時間</dt>
+              <dd class="footer__dd">18:00〜23:00</dd>
+            </div>
+            <div class="footer__row">
+              <dt class="footer__dt">定休日</dt>
+              <dd class="footer__dd">火曜日</dd>
+            </div>
+          </dl>
+          <div class="footer__map">
+            <img src="img/top/map-sp.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+
+  </main>
+
+
+
+
+
+</body>

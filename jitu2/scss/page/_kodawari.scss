@@ -1,0 +1,73 @@
+@use "../global" as *;
+
+.kodawari{
+  background: url(../img/top/owner-back-sp.jpg) no-repeat center center/ cover;
+}
+
+.kodawari-items{
+  @include mq(md) {
+    display: flex;
+    margin-top: rem(40);
+  }
+}
+
+.kodawari__item-content{
+  color: #E3E3E3;
+  background-color: #202925;
+  margin: 0 calc(50% - 50vw);
+	width: 100vw;
+  padding-top: rem(27);
+  padding-right: rem(15);
+  padding-left: rem(15);
+  @include mq(md) {
+    width: rem(690);
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: rem(50);
+    padding-top: rem(47);
+    padding-right: rem(75);
+    padding-left: rem(75);
+  }
+}
+
+.kodawari__content-item-title{
+  font-size: rem(24);
+  line-height: 1.6;
+  font-weight: $regular;
+  font-family: $base-font-family;
+  @include mq (md) {
+    text-align: center;
+  }
+}
+
+.kodawari__content-item-text{
+  font-size: rem(16);
+  line-height: 1.8;
+  font-weight: $regular;
+  margin-top: rem(10);
+  font-family: $base-font-family;
+  @include mq (md) {
+    margin-top: rem(38);
+  }
+}
+
+.kodawari__item-img-pc{
+  display: none;
+  @include mq(md) {
+    display: block;
+    width: rem(340);
+    max-width: 100%;
+  }
+}
+
+.kodawari__item-img-sp{
+  width: rem(240);
+  height: rem(160);
+  margin-top: rem(20);
+  margin-right: auto;
+  margin-left: auto;
+  @include mq(md) {
+    display: none;
+  }
+}
+

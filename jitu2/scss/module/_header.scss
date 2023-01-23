@@ -1,0 +1,57 @@
+@use "../global" as *;
+
+.header {
+  width: 100%;
+  height: rem(70);
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  position: fixed;
+  box-sizing: border-box;
+  background-color: transparent;
+  @include mq(md) {
+    height: rem(150);
+  }
+}
+
+.header__inner {
+  align-items: center;
+  display: flex;
+  height: inherit;
+  padding-left: rem(15);
+  padding-right: rem(15);
+  justify-content: space-between;
+  @include mq(md) {
+    width: rem(1154);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.header__logo {
+  width: rem(96);
+  height: inherit;
+  vertical-align: bottom;
+  opacity: 1;
+  @include mq(md) {
+    width: rem(230);
+    margin-top: rem(40);
+  }
+}
+
+.header__logo a {
+  align-items: center;
+  display: flex;
+  height: inherit;
+}
+
+.header__hamburger{
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  @include mq(md) {
+    display: none;
+  }
+}

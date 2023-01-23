@@ -1,0 +1,71 @@
+@use "../global" as *;
+
+.owner{
+  background: url(../img/top/owner-back-sp.jpg) no-repeat center center/ cover;
+}
+
+
+.owner-items{
+  @include mq(md) {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: rem(40);
+    align-items: flex-end;
+  }
+}
+
+.owner__item-img{
+  width: rem(172);
+  margin-top: rem(20);
+  margin-right: auto;
+  margin-left: auto;
+  @include mq(md) {
+  width: rem(370);
+  max-width: 100%;
+  margin: 0;
+  }
+}
+
+.owner__item-content{
+  @include mq(md) {
+    margin-right: rem(20);
+  }
+}
+
+.owner__content-item-title{
+  font-size: rem(40);
+  line-height: calc(48 / 40);
+  font-weight: $regular;
+  font-family: $base-font-family;
+  @include mq (md) {
+    font-size: rem(80);
+    line-height: calc(96 / 80);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: rem(106);
+  }
+}
+
+.owner__content-item-text{
+  background-color: #202925;
+  color: #E3E3E3;
+  font-size: rem(16);
+  line-height: 1.4;
+  font-weight: $regular;
+  font-family: $base-font-family;
+  margin: 0 calc(50% - 50vw);
+	width: 100vw;
+  padding-top: rem(20);
+  padding-right: rem(15);
+  padding-left: rem(15);
+  padding-bottom: rem(7);
+  @include mq (md) {
+    line-height: 2.2;
+    width: rem(690);
+    margin: 0;
+    padding-top: rem(40);
+    padding-right: rem(75);
+    padding-left: rem(75);
+    padding-bottom: rem(45);
+  }
+}

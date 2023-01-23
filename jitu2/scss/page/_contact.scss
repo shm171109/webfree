@@ -1,0 +1,95 @@
+@use "../global" as *;
+
+.contact{
+  background-color: $white;
+  @include mq(md) {
+    padding-top: rem(50);
+    padding-bottom: rem(100);
+  }
+}
+
+.contact__title{
+  padding-top: rem(85);
+}
+
+
+.contact__inner{
+  max-width: rem(1280);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: rem(80.5);
+    width: 100%;
+  }
+}
+
+.contact__message{
+  font-family: $base-font-family;
+  font-size: rem(14);
+  line-height: calc(24 / 14);
+  font-weight: $medium;
+  padding-right: rem(10);
+  padding-left: rem(10);
+  color: #502323;
+  @include mq(md) {
+    font-size: rem(25);
+    line-height: calc(30 / 25);
+    font-weight: $bold;
+    text-align: center;
+  }
+}
+
+.contact__form{
+  margin-top: rem(16);
+  padding-top: rem(42);
+  padding-bottom: rem(40);
+  @include mq(md) {
+  margin-top: rem(83);
+  background-color: initial;
+  }
+}
+
+.form__items{
+  width: rem(200);
+  margin: 0 auto;
+  @include mq(md) {
+    width: rem(660);
+  }
+}
+
+.form__item{
+  display: inline-block;
+  @include mq(md) {
+    display: flex;
+  }
+}
+
+.form__label{
+  font-size: rem(14);
+  line-height: 1;
+}
+
+.form__label span{
+  color: #91855F;
+  font-size: rem(8);
+}
+
+.form__label-area{
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.form__input-area{
+  padding-left: rem(12);
+}
+
+.contact__text{
+  @include mq(md) {
+    font-size: rem(14);
+    margin-top: rem(44);
+    width: rem(390);
+    margin-left: auto;
+  }
+}

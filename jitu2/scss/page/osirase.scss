@@ -1,0 +1,111 @@
+@use "../global" as *;
+
+.osirase{
+  background-color: #ffffff;
+}
+
+
+/*アコーディオン全体*/
+.accordion-area{
+  list-style: none;
+  width: 96%;
+  max-width: 900px;
+  margin:0 auto;
+  padding-right: 0;
+  padding-left: 0;
+  @include mq(md) {
+    max-width: 1280px;
+  }
+}
+
+.accordion-area li{
+  margin: 16px 0;
+  @include mq(md) {
+    margin: 80px 0;
+  }
+}
+
+.accordion-area section {
+border: 1px solid #91855F;
+}
+
+/*アコーディオンタイトル*/
+.accordion__wrapper{
+  position: relative;/*+マークの位置基準とするためrelative指定*/
+  cursor: pointer;
+  font-weight: $regular;
+  padding: 3% 3% 3% 50px;
+  transition: all .5s ease;
+  color: #ffffff;
+  background-color: #91855F;
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.osirase-item__date{
+  @include mq(md) {
+    margin-right: rem(30);
+    font-size: rem(24);
+    line-height: calc(36 / 24);
+    font-family: $base-font-family;
+  }
+}
+
+.accordion-title title{
+  @include mq(md) {
+    font-size: rem(24);
+    line-height: calc(36 / 24);
+    font-family: $base-font-family;
+  }
+}
+
+.accordion__wrapper::before{
+  content: '';
+  position: absolute;
+  width: rem(20);
+  height: rem(17);
+  background: url(../img/common/sankaku.png) no-repeat center center/ contain;
+  top: 50%;
+  transform: translateY(-50%);
+  left: rem(20);
+  @include mq(md) {
+  background: url(../img/common/sankaku-pc.png) no-repeat center center/ cover;
+  height: rem(23);
+  margin-right: rem(13);
+  }
+}
+
+
+
+/*　closeというクラスがついたら形状変化　*/
+.accordion__wrapper.close::before{
+transform: rotate(90deg) translateY(0) translateX(-50%);
+}
+
+/*アコーディオンで現れるエリア*/
+.box {
+  display: none;/*はじめは非表示*/
+  background: #ffffff;
+  background-color: #ffffff;
+  padding: rem(20);
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(36 / 16);
+    font-family: $base-font-family;
+    padding-top:rem(13);
+    padding-right: rem(40);
+    padding-bottom: rem(17);
+    padding-left: rem(36);
+  }
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+
+h2{
+  text-align: center;
+  margin: 30px 0;
+  font-size:1rem;
+}

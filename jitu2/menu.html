@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <!-- meta情報 -->
+  <title>タイトル</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="shortcut icon" href="#" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./js/script.js"></script>
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="">
+          <img class="menu__logo-white" src="img/common/logo-mv.png" alt="kon-logo">
+        </a>
+      </h1>
+      <button class="header__hamburger hamburger js-hamburger">
+        <div class="hamburger__wrapper menu__hamburger-wrapper">
+          <div class="hamburger__bar-area menu__hamburger__bar-area">
+            <span class="hamburger__bar menu__hamburger__bar"></span>
+            <span class="hamburger__bar menu__hamburger__bar"></span>
+            <span class="hamburger__bar menu__hamburger__bar"></span>
+          </div>
+        </div>
+      </button>
+      
+      <nav class="header__nav header-nav js-drawer">
+        <ul class="header-nav__items">
+          <li class="header-nav__item menu-nav__item">
+            <a href="">
+              top
+            </a>
+          </li>
+          <li class="header-nav__item menu-nav__item">
+            <a href="">
+              メニュー
+            </a>
+          </li>
+          <li class="header-nav__item menu-nav__item">
+            <a href="">
+              お問い合わせ
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu__mv">
+      <div class="menu__mv__inner inner">
+        <h2 class="menu__title">MENU</h2>
+        <div class="menu__img"><img src="img/common/img_menu_mv.png" alt=""></div>
+      </div>
+      <div class="menu-slideshow">
+        <ul class="menu__slide-img">
+          <li class="slide-content">
+            <img src="img/top/img_1.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_2.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_3.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_4.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_5.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_6.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_7.jpg" alt="">
+          </li>
+        </ul>
+        <ul class="menu__slide-img">
+          <li class="slide-content">
+            <img src="img/top/img_1.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_2.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_3.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_4.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_5.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_6.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_7.jpg" alt="">
+          </li>
+        </ul>
+        <ul class="menu__slide-img">
+          <li class="slide-content">
+            <img src="img/top/img_1.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_2.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_3.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_4.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_5.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_6.jpg" alt="">
+          </li>
+          <li class="slide-content">
+            <img src="img/top/img_7.jpg" alt="">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="menu">
+      <div class="menu__inner inner">
+        <h2 class="menu-title"><span>P</span>lates</h2>
+        <div class="menu__wrapper">
+          <dl class="menu__dl">
+            <div class="menu__row">
+              <dt class="menu__dt">ビストログリーンサラダ</dt>
+              <dd class="menu__dd">1,200円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">シーザーサラダ<br>アンチョビドレッシング</dt>
+              <dd class="menu__dd">1,800円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">オニオンスープ</dt>
+              <dd class="menu__dd">1,400円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">オマール海老のビスク</dt>
+              <dd class="menu__dd">1,700円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">鶏胸肉のロースト</dt>
+              <dd class="menu__dd">2,200円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">ビーフサーロイングリル</dt>
+              <dd class="menu__dd">2,900円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">牛の頰肉<br>赤ワイン煮込み</dt>
+              <dd class="menu__dd">2,400円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">ラムチョップのグリル</dt>
+              <dd class="menu__dd">2,200円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">真鯛のポワレ</dt>
+              <dd class="menu__dd">3,800円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">サーモンのパイ包み焼き</dt>
+              <dd class="menu__dd">2,900円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">鮭のムニエル</dt>
+              <dd class="menu__dd">2,700円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">ムール貝の白ワイン蒸し</dt>
+              <dd class="menu__dd">2,700円</dd>
+            </div>
+          </dl>
+        </div>
+        <h2 class="menu-title"><span>C</span>ourse</h2>
+        <div class="menu__wrapper">
+          <dl class="menu__dl">
+            <div class="menu__row">
+              <dt class="menu__dt">Kon フルコースA</dt>
+              <dd class="menu__dd">7,200円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">Kon フルコースB</dt>
+              <dd class="menu__dd">8,800円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">Kon フルコースC</dt>
+              <dd class="menu__dd">10,200円</dd>
+            </div>
+          </dl>
+        </div>
+        <h2 class="menu-title"><span>D</span>esert</h2>
+        <div class="menu__wrapper">
+          <dl class="menu__dl">
+            <div class="menu__row">
+              <dt class="menu__dt">苺のピューレ</dt>
+              <dd class="menu__dd">1,100円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">季節のアイス</dt>
+              <dd class="menu__dd">900円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">クリームブリュレ</dt>
+              <dd class="menu__dd">1,200円</dd>
+            </div>
+          </dl>
+        </div>
+        <h2 class="menu-title"><span>D</span>rink</h2>
+        <div class="menu__wrapper">
+          <dl class="menu__dl">
+            <div class="menu__row">
+              <dt class="menu__dt">生ビール</dt>
+              <dd class="menu__dd">900円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">ハイネケン(瓶)</dt>
+              <dd class="menu__dd">800円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">ヒューガルデン(瓶)</dt>
+              <dd class="menu__dd">800円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">ハートランド(瓶)</dt>
+              <dd class="menu__dd">1,700円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">白州</dt>
+              <dd class="menu__dd">1,100円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">マッカラン</dt>
+              <dd class="menu__dd">900円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">響</dt>
+              <dd class="menu__dd">1,100円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">フランス産ピノ・ノワール</dt>
+              <dd class="menu__dd">4,200円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">フランス産メルロー</dt>
+              <dd class="menu__dd">4,900円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">イタリア産<br>カベルネ・ソーヴィニヨン</dt>
+              <dd class="menu__dd">6,400円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">ニュージーランド産<br>シャルドネ</dt>
+              <dd class="menu__dd">3,800円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">フランス産ピノ・グリ</dt>
+              <dd class="menu__dd">4,900円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">熊本県産シャルドネ</dt>
+              <dd class="menu__dd">5,700円</dd>
+            </div>
+          </dl>
+        </div>
+        <h2 class="menu-title"><span>D</span>esert</h2>
+        <div class="menu__wrapper">
+          <dl class="menu__dl">
+            <div class="menu__row">
+              <dt class="menu__dt">スパークリングウォーター</dt>
+              <dd class="menu__dd">700円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">ミネラルウォーター</dt>
+              <dd class="menu__dd">550円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">烏龍茶</dt>
+              <dd class="menu__dd">550円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">オレンジ100%</dt>
+              <dd class="menu__dd">500円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">グレープ100%</dt>
+              <dd class="menu__dd">500円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">コーヒー</dt>
+              <dd class="menu__dd">800円</dd>
+            </div>
+            <div class="menu__row">
+              <dt class="menu__dt">紅茶</dt>
+              <dd class="menu__dd">800円</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <img src="img/common/logo-mv.png" alt="">
+        </div>
+        <div class="footer__wrapper">
+          <dl class="footer__dl">
+            <div class="footer__row">
+              <dt class="footer__dt">店名</dt>
+              <dd class="footer__dd">Kon</dd>
+            </div>
+            <div class="footer__row">
+              <dt class="footer__dt">住所</dt>
+              <dd class="footer__dd">熊本県熊本市城下町1-1</dd>
+            </div>
+            <div class="footer__row">
+              <dt class="footer__dt">電話番号</dt>
+              <dd class="footer__dd">096-111-1111</dd>
+            </div>
+            <div class="footer__row">
+              <dt class="footer__dt">アクセス</dt>
+              <dd class="footer__dd">熊本駅より市電で城下町へ城下町降車後徒歩3分</dd>
+            </div>
+            <div class="footer__row">
+              <dt class="footer__dt">営業時間</dt>
+              <dd class="footer__dd">18:00〜23:00</dd>
+            </div>
+            <div class="footer__row">
+              <dt class="footer__dt">定休日</dt>
+              <dd class="footer__dd">火曜日</dd>
+            </div>
+          </dl>
+          <div class="footer__map">
+            <img src="img/top/map-sp.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+
+  </main>
+
+
+
+
+
+</body>
